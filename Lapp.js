@@ -39,15 +39,15 @@ function vali ()
 
 var s= document.getElementById('agree')
 
-s.addEventListener('change',function()
+s.addEventListener('change',function()//attaches an event handler to the specified element.
 {
     let register = document.getElementById("register");
     if(s.checked)
     {
-        register.removeAttribute('disabled')
+        register.removeAttribute('disabled')//removes an attribute, and does not have a return value.
     }
     else{
-        register.setAttribute('disabled','disabled')
+        register.setAttribute('disabled','disabled')//sets a new value to an attribute
     }
 
 })
